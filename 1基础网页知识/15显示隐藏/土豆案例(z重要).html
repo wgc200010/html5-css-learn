@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .tudou {
+            position: relative;
+            width: 444px;
+            height: 320px;
+            margin: 100px auto;
+            background-color: pink;
+        }
+        
+        .tudou img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .mask {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5) url(../images/土豆.png) no-repeat center center;
+            display: none;
+        }
+        
+        .tudou:hover .mask {
+            display: block;
+        }
+        /* 经过大盒子显示里面的遮罩 */
+        
+        .mask img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tudou">
+        <div class="mask">
+        </div>
+        <img src="../images/tudou.jpg" alt="">
+    </div>
+</body>
+
+</html>

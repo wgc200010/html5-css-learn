@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(206, 72, 72);
+            overflow: auto;
+            /* scrollTop返回滚动条拖动时，距离最顶部的距离 */
+            border: 10px solid green;
+            /* 不算边框 */
+            padding: 20px;
+            /* padding包含 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>内环境更加容易和人容内环境更加容易和人容内环境更加容易和人容内环境更加容易和人容内环境更加容易和人容内环境更加容易和人容内环境更加容易和人容内环境更加容易和人容内环境更加容易和人容内环境更加容易和人容内内环境更加容易和人容内环境更加容易和人容内环境更加容易和人容环内环境更加容易和人容境更加容易和人容内环境更加容易内环境更加容易和人容和人容内环境更加容易和人容内环境更加容易和人容内环境更加容易和人容</div>
+    <script>
+        // 如果内容超出盒子，会返回内容的实际大小
+        var div = document.querySelector('div');
+        console.log(div.scrollHeight); //返回实际高度，不含边框
+
+        div.addEventListener('scroll', function() {
+            console.log(div.scrollTop); //滚动条变化时触发
+        })
+    </script>
+</body>
+
+</html>

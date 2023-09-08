@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .father {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px;
+        }
+        
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(48, 231, 131);
+            margin-left: 50px;
+        }
+        
+        .w {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(99, 38, 197);
+            margin: 0 auto 200px;
+            padding: 10px;
+            /* 会撑大盒子 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <div class="w"></div>
+    <script>
+        //可以获得任意形式的样式值
+        //只读，无法更改
+        var father = document.querySelector('.father');
+        var son = document.querySelector('.son');
+        //1.得到位置
+        console.log(father.offsetTop);
+        console.log(father.offsetLeft);
+        console.log(son.offsetTop); //父盒子需要有定位
+        console.log(son.offsetLeft);
+
+        // 2.得到大小
+        var w = document.querySelector('.w');
+        console.log(w.offsetWidth); //pading撑大
+        console.log(w.offsetHeight);
+
+        //3.具有定位的父亲,否则返回body
+        console.log(son.offsetParent);
+        console.log(w.offsetParent);
+    </script>
+</body>
+
+</html>

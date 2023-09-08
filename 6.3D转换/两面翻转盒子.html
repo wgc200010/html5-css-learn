@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            perspective: 500px;
+            transform-style: preserve-3d;
+            transition: all 1s;
+        }
+        
+        .box:hover {
+            transform: rotateX(180deg);
+        }
+        
+        .front,
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            font-size: 30px;
+            text-align: center;
+            line-height: 300px;
+        }
+        
+        .front {
+            background-color: rgb(204, 61, 61);
+            transform: rotateX(180deg);
+        }
+        
+        .back {
+            background-color: rgb(13, 235, 124);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="front">第一个</div>
+        <!-- <div class="back">第二个</div> -->
+    </div>
+</body>
+
+</html>

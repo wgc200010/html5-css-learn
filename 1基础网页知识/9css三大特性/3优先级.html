@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: yellow!important;
+            /* !important权重最高 */
+        }
+        
+        .color {
+            color: violet;
+        }
+        
+        #d {
+            color: tomato;
+        }
+        
+        body {
+            color: red;
+        }
+        
+        ul li {
+            color: red;
+        }
+        /* 权重为0,0,0,1+0,0,0,1=0,0,0,2 */
+        
+        li {
+            color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color" id="d" style="color: springgreen;">胜多负少</div>
+    优先级<img src="../images/Snipaste_2022-01-16_14-30-59.png" alt="">
+    <!-- 继承的权重为0 -->
+    <a href="#">13213</a> 123
+    <!-- a链接浏览器有默认样式a{color：blue;},不能继承 -->
+    <ul>
+        <li>大大</li>
+        <li>发</li>
+        <li>是否是</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+/* 更改浏览器默认的格式 */
+
+
+/* 1.京东初始化 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 不撑大 */
+}
+
+
+/* 内外边距 */
+
+em,
+i {
+    font-style: normal
+}
+
+
+/* 斜体不倾斜 */
+
+li {
+    list-style: none
+}
+
+
+/* 去掉小圆点 */
+
+img {
+    border: 0;
+    /* 照顾低版本浏览器，兼容性问题 */
+    vertical-align: middle
+    /* 取消空白缝隙 */
+}
+
+button {
+    cursor: pointer
+}
+
+
+/* 鼠标样式 */
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+
+/* 链接样式 */
+
+a:hover {
+    color: #c81623
+}
+
+
+/* 经过时链接变红 */
+
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    /* 抗锯齿性，css3 */
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+
+/* 页面背景，字体，颜色 */
+
+.hide,
+.none {
+    display: none
+}
+
+
+/* 隐藏 */
+
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+
+/* 清除浮动 */

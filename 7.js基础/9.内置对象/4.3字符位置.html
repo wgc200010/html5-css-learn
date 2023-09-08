@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = '啊大苏打大';
+        console.log(str.indexOf('大')); //返回（）元素序列号，默认为第一个元素
+        console.log(str.indexOf('大', 2)); //从序列号2开始查找
+
+
+        //统计字符串某个子母出现次数，以及位置
+        var str2 = 'asdfgadfadffasda';
+        var arr = [],
+            j = 0,
+            i = 0;
+        while (str2.indexOf('a', i) != -1) {
+            arr[j++] = str2.indexOf('a', i);
+            i = str2.indexOf('a', i) + 1;
+        }
+        console.log(j);
+        for (i = 0; i < j; i++) {
+            console.log(arr[i]);
+        } //输出每次出现的位置
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

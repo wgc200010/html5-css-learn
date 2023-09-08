@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var date = new Date();
+        console.log(date.getFullYear()); //返回当前日期的年份
+        console.log(date.getMonth() + 1); //返回当前月份（0-11），小一个月,所以加1
+        console.log(date.getDate()); //日期,准确的
+        console.log(date.getDay()); //返回周几，准确，周日为0
+
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var dates = date.getDate();
+        console.log('今天是' + year + '年' + month + '月' + dates + '日');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

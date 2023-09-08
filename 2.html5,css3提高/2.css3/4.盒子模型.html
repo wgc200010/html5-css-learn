@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 1px solid red;
+            padding: 15px;
+            /* 加边框,内边距都会让盒子变大 */
+        }
+        
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(81, 204, 136);
+            border: 30px solid red;
+            box-sizing: border-box;
+            /* 加上box-sizing: border-box后不会撑开，前提是边框边距不超过宽度 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">寒假</div>
+    <div class="box2">即可即可</div>
+</body>
+
+</html>

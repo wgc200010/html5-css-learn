@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var x = 123;
+        console.log(String(x) + 12); //String将x转化为字符型
+        console.log('0' + x); //转换成字符型
+
+        var y = prompt('请输入');
+        console.log(parseInt(y)); //转化为数字型，取整int同c
+        console.log(parseFloat(y)); //转化为float型
+        console.log(parseInt('120px')); //去掉单位
+        console.log(parseInt('rem120px')); //NaN
+        console.log(Number('12.123')); //转换为数字型
+        console.log('12' - 0); //'- * /'进行转换
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

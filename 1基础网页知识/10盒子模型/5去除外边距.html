@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 浏览器会默认自带边距 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* *通配符选择器，去掉所有边距 */
+        
+        span {
+            background-color: pink;
+            margin: 10px;
+            /* 行内元素只设置左右外边距即可 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>123</div>
+    <span>行内</span>
+</body>
+
+</html>

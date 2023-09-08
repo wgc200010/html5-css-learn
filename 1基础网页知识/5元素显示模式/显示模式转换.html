@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            width: 200px;
+            height: 100px;
+            background-color: #333;
+            display: block;
+            /* 将a转化为块级元素 */
+            /* 可以调整宽高 */
+        }
+        
+        div {
+            width: 200px;
+            height: 10px;
+            background-color: springgreen;
+            display: inline;
+            /* 转化为行内元素 */
+            /* 不能调整宽高 */
+        }
+        
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(224, 26, 26);
+            display: inline-block;
+            /* 行内元素转化行内块元素 */
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">汉字</a>
+    <div>块级元素</div>
+    <span>行内转化行内块</span>
+</body>
+
+</html>

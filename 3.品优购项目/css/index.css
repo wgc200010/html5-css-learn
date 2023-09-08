@@ -1,0 +1,324 @@
+/* main主要模块开始 */
+
+.w .main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.w .main .focus {
+    float: left;
+    height: 455px;
+    width: 721px;
+}
+
+.w .main .newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.w .main .newsflash .news {
+    height: 165px;
+}
+
+.w .main .newsflash .news .news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.w .main .newsflash .news .news-hd h5 {
+    margin-left: 15px;
+    font-size: 14px;
+    float: left;
+}
+
+.w .main .newsflash .news {
+    border: 1px solid #e4e4e4;
+}
+
+.w .main .newsflash .news .news-hd .more {
+    margin-right: 15px;
+    float: right;
+}
+
+.w .main .newsflash .news .news-hd .more::after {
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.w .main .newsflash .news .news-bd {
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.w .main .newsflash .news .news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+}
+
+.w .main .newsflash .liveserice {
+    /* position: relative; */
+    height: 209px;
+}
+
+.w .main .newsflash .liveserice ul li {
+    position: relative;
+    float: left;
+    width: 63.5px;
+    text-align: center;
+    height: 72px;
+    border: 1px solid #e8e8e7;
+    border-top: 0;
+    margin-left: -1px;
+}
+
+.w .main .newsflash .liveserice ul li p {
+    margin-top: 45px;
+    font-size: 14px;
+}
+
+.w .main .newsflash .liveserice ul li div {
+    position: absolute;
+    z-index: 1;
+    top: 14px;
+    left: 18px;
+    width: 25px;
+    height: 28px;
+    background-position: -142px -18px;
+    background-image: url(../images/icons.png);
+}
+
+.w .main .newsflash .liveserice ul li .ico1 {
+    background-position: -17px -14px;
+}
+
+.w .main .newsflash .liveserice ul li .ico2 {
+    background-position: -80px -18px;
+}
+
+.w .main .newsflash .liveserice ul li .ico3 {
+    background-position: -142px -18px;
+}
+
+.w .main .newsflash .liveserice ul li .ico4 {
+    background-position: -205px -18px;
+}
+
+.w .main .newsflash .liveserice ul li .ico5 {
+    background-position: -17px -87px;
+}
+
+.w .main .newsflash .liveserice ul li .ico6 {
+    background-position: -75px -87px;
+}
+
+.w .main .newsflash .liveserice ul li .ico7 {
+    background-position: -142px -87px;
+}
+
+.w .main .newsflash .liveserice ul li .ico8 {
+    background-position: -205px -87px;
+}
+
+.w .main .newsflash .liveserice ul li .ico9 {
+    background-position: -17px -158px;
+}
+
+.w .main .newsflash .liveserice ul li .ico10 {
+    background-position: -755px -158px;
+}
+
+.w .main .newsflash .liveserice ul li .ico11 {
+    background-position: -142px -158px;
+}
+
+.w .main .newsflash .liveserice ul li .ico12 {
+    background-position: -205px -158px;
+}
+
+.w .main .newsflash .liveserice ul li .jian {
+    position: absolute;
+    top: 0;
+    padding-right: 0;
+    right: 0;
+    width: 13px;
+    height: 16px;
+    background-image: url(../images/jian.png);
+    /* background-repeat: no-repeat; */
+}
+
+.w .main .newsflash .bargain {
+    margin-top: 5px;
+}
+
+
+/* main主要模块结束 */
+
+
+/* 推荐模块开始 */
+
+.recommend {
+    height: 163px;
+    margin-top: 12px;
+}
+
+.recommend .recommend-hd {
+    float: left;
+    height: 163px;
+    width: 206px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recommend .recommend-bd {
+    float: left;
+}
+
+.recommend .recommend-bd ul li {
+    position: relative;
+    width: 248px;
+    float: left;
+}
+
+.recommend .recommend-bd ul li:nth-child(-n+3):after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 140px;
+    background-color: #ddd;
+}
+
+
+/* 推荐模块结束 */
+
+
+/* 楼层区域开始 */
+
+
+/* 1楼开始 */
+
+.floor .jiadian .box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.floor .jiadian .box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.floor .jiadian .box_hd .tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.floor .jiadian .box_hd .tab_list ul li {
+    float: left;
+}
+
+.floor .jiadian .box_hd .tab_list ul li a {
+    margin: 0 15px;
+}
+
+.floor .jiadian .box_bd {
+    height: 361px;
+}
+
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.tab_list_item .col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.tab_list_item .col_210 ul {
+    padding-left: 12px;
+}
+
+.tab_list_item .col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab_list_item .col_329 {
+    width: 329px;
+    background-color: #fff;
+}
+
+.tab_list_item .col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.tab_list_item .col_219 {
+    width: 219px;
+}
+
+.bd {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* 1楼结束 */
+
+
+/* 2楼开始 */
+
+.floor .shouji .box1_hd {
+    height: 35px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c81623;
+}
+
+.floor .shouji .box1_hd h3 {
+    float: left;
+    font-weight: 400;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.floor .shouji .box1_hd .tab_list {
+    float: right;
+}
+
+.floor .shouji .box1_hd .tab_list ul li {
+    float: left;
+}
+
+.floor .shouji .box1_hd .tab_list ul li a {
+    font-size: 14px;
+    margin: 0 10px;
+    line-height: 35px;
+}
+
+.floor .shouji .box1_bd {
+    height: 364px;
+}
+
+
+/* 2楼结束 */
+
+
+/* 楼层区域结束 */

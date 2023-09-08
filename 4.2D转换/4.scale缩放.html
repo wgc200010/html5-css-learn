@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(218, 35, 35, 0.966);
+            margin: 300px auto;
+            transition: all 0.5s;
+        }
+        /* 可设置中心点（默认为正中心），不会影响其他盒子， */
+        /* 同样是transfrom-orign改变缩放中心点 */
+        
+        div:hover {
+            /* transform: scale(1, 2); */
+            /* (x,y)不带单位，宽高的倍数 */
+            transform: scale(5);
+            /* 等比例可直接写一个（n） */
+        }
+        
+        section {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(218, 35, 35, 0.966);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <section></section>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul li {
+            float: left;
+            width: 100px;
+            height: 200px;
+            list-style: none;
+            border: 1px solid rgb(5, 5, 5);
+            margin-left: -1px;
+            /* 防止边框叠加 */
+        }
+        
+        ul li:hover {
+            position: relative;
+            /* 提高当前盒子的层级，或用z-index; */
+            border-color: skyblue;
+        }
+        
+        div {
+            width: 300px;
+            height: 80px;
+        }
+        
+        div img {
+            width: 130px;
+            height: 80px;
+            float: left;
+        }
+        /* 时文字环绕图片，不用分为两个盒子 */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>5</li>
+        <li>5</li>
+    </ul>
+    <div><img src="../images/01.jpg" alt=""> fsfsfsfs嘀咕嘀咕的顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶的灌灌灌灌灌灌灌灌灌灌灌灌
+    </div>
+</body>
+
+</html>

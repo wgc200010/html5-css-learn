@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id='btn'>独算分</button>
+    <script>
+        //事件三部分：源、类型、处理程序
+        //1.事件源：被触发的对象
+        var btn = document.getElementById('btn');
+        //2.事件类型：鼠标点击、经过、滚轮...
+        //3.处理程序
+        btn.onclick = function() {
+            alert('触发');
+        }
+    </script>
+</body>
+
+</html>

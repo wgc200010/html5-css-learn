@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var o = {
+            age: 12,
+        }
+        if (o['sex']) {
+            console.log('存在该属性');
+        } else {
+            console.log('不存在该属性');
+        } //判断是否有该属性
+
+
+        //输出最多的字符
+        var str = 'asdfggggdscvxdf';
+        var o = {},
+            max = 0;
+        for (var i = 0; i < str.length; i++) {
+            if (o[str[i]]) {
+                o[str[i]]++;
+            } else {
+                o[str[i]] = 1;
+            }
+            if (max < o[str[i]]) {
+                max = o[str[i]];
+            }
+        }
+        console.log(max);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

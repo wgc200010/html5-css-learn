@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <span class="hour">1</span>
+        <span class="min">2</span>
+        <span class="second">3</span>
+    </div>
+    <script>
+        var hour1 = document.querySelector('.hour');
+        var min = document.querySelector('.min');
+        var second = document.querySelector('.second');
+        var inputtime = +new Date('2022-3-25 0:0:0'); //返回输入时间毫秒数
+        countdown();
+        setInterval(countdown, 1000);
+
+        function countdown() {
+            var nowtime = +new Date();
+            var times = (inputtime - nowtime) / 1000; //times剩余秒数
+            var day = parseInt(times / 60 / 60 / 24); //得到天数
+            day = day < 10 ? '0' + day : day;
+            var hour = parseInt(times / 60 / 60 % 24); //小时
+            hour = hour < 10 ? '0' + hour : hour;
+            hour1.innerHTML = hour;
+            var mi = parseInt(times / 60 % 60); //分
+            mi = mi < 10 ? '0' + mi : mi;
+            min.innerHTML = mi;
+            var s = parseInt(times % 60); //秒
+            s = s < 10 ? '0' + s : s;
+            second.innerHTML = s;
+            return day + '天' + hour + '时' + mi + '分' + s + '秒';
+        }
+    </script>
+</body>
+
+</html>

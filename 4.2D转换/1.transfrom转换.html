@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transform: translate(100px, 100px);
+            /* (x,y)x轴移动距离，y轴移动距离(不能省略) */
+            transform: translateX(200px);
+            /* 只移动x */
+        }
+        /* transform: translate会保留原位置，不影响其他元素位置 */
+        /* 对行内元素无效 */
+        
+        section {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(223, 47, 47);
+        }
+        
+        section:hover {
+            transform: translateY(-100%);
+            /* 配合hover使用，不影响其他盒子位置 */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <section></section>
+</body>
+
+</html>

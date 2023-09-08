@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid pink;
+            /* 图片底部默认会留白，默认与基线对齐 */
+        }
+        
+        img {
+            vertical-align: middle;
+            /* 方法一：中线对齐，或底线对齐 */
+            display: block;
+            /* 方法二，转化为块级，但会独占一行 */
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="../images/01.png" alt=""></div>
+</body>
+
+</html>

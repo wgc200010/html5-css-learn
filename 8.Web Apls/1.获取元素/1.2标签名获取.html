@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id='ul'>
+        <li>大大大大困窘i建瓯热</li>
+        <li>大大大大困窘i建瓯热</li>
+        <li>大大大大困窘i建瓯热</li>
+        <li>大大大大困窘i建瓯热</li>
+        <li>大大大大困窘i建瓯热</li>
+    </ul>
+    <script>
+        //TagName获取
+        var lis = document.getElementsByTagName('li');
+        console.log(lis); //伪数组，元素对象的集合
+        for (i = 0; i < lis.length; i++)
+            console.log(lis[i]);
+
+
+        //获取某个父级标签下的元素
+        var ul = document.getElementsByTagName('ul');
+        console.log(ul[0].getElementsByTagName('li')); //通过父级标签获取，不常用
+        var ul1 = document.getElementById('ul');
+        console.log(ul.getElementsByTagName(li)); //给父级加id，较为常用
+    </script>
+</body>
+
+</html>

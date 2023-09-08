@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* //很多浏览器不支持 */
+        
+        div {
+            display: flex;
+            /* 主轴默认为x轴，从左到右 */
+            /* flex-direction: column; 从上到下 */
+            /* flex-direction: row-reverse;  调整主轴方向，从右向左 */
+            flex-direction: row;
+            width: 800px;
+            height: 300px;
+            background-color: red;
+            justify-content: center;
+            /* 主轴居中 */
+            align-items: center;
+            /* 侧轴居中,只适用单行 */
+            flex-wrap: wrap;
+        }
+        
+        div span {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* deg为度 */
+        
+        img {
+            margin-top: 50px;
+            transform: rotate(45deg);
+            /* 顺时针旋转45° */
+            border-radius: 50%;
+            border: 3px solid red;
+            transition: all .5s;
+        }
+        
+        img:hover {
+            transform: none;
+        }
+        
+        div {
+            position: relative;
+            width: 290px;
+            height: 50px;
+            border: 1px solid #000;
+        }
+        
+        div::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            width: 15px;
+            height: 15px;
+            right: 5px;
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+            /* 设置小三角，不用图标 */
+            transform: rotate(-45deg);
+            transition: all 0.5s;
+        }
+        
+        div:hover::after {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../1基础网页知识/images/01.jpg" alt="">
+    <div></div>
+</body>
+
+</html>

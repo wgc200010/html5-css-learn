@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(177, 67, 67);
+        }
+        
+        span {
+            position: absolute;
+            top: 100px;
+            display: block;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(97, 73, 73);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn500">点击到500</button>
+    <button class="btn800">点击到800</button>
+    <div></div>
+    <span></span>
+    <script>
+        var div = document.querySelector('div');
+        var span = document.querySelector('span');
+        var btn500 = document.querySelector('.btn500');
+        var btn800 = document.querySelector('.btn800');
+
+        function anim(obj, target, callback) {
+            // console.log(callback);,调用时callback（）
+            //obj目标对象,target目标位置/
+            clearInterval(obj.timer); //先清除以前的定时器，保证只有一个，
+            obj.timer = setInterval(function() {
+
+                // var step = Math.ceil((target - obj.offsetLeft) / 10); //计算步长,改为整数，不要小数
+                var step = (target - obj.offsetLeft) / 10;
+                step = step > 0 ? Math.ceil(step) : Math.floor(step);; //正数向上取整，负数向下取整
+                if (obj.offsetLeft == target) {
+                    //停止计时器
+                    clearInterval(obj.timer);
+                    //回调函数写在定时器里
+                    if (callback) {
+                        callback(); //如果有回调函数就调用
+                    }
+                }
+                obj.style.left = obj.offsetLeft + step + 'px';
+            }, 30);
+        }
+        btn500.addEventListener('click', function() {
+            anim(span, 500); //调用,每次点击都会调用
+        })
+        btn800.addEventListener('click', function() {
+            anim(span, 800, function() {
+                span.style.backgroundColor = 'green'; //回调函数
+            }); //调用,每次点击都会调用
+        })
+    </script>
+</body>
+
+</html>

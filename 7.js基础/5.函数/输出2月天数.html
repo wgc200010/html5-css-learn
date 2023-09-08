@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function isrun(year) {
+            if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+                return 1;
+        }
+        var year = prompt("输入年份");
+        if (isrun(year) == 1)
+            alert(29);
+        else
+            alert(28);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

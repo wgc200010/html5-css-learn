@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 300px;
+            background-color: pink;
+            /* display: inline-block; */
+            /* 行内块横向会有空隙 */
+            float: left;
+            /* 浮动使盒子横向排列，没有空隙 */
+        }
+        /* 1.脱离标准流的控制，浮在空中 */
+        /* 2.不再保留原先位置，让给其他标准流 */
+        /* 第二个盒子不浮动，会在第一个盒子下 */
+        
+        .box2 {
+            width: 300px;
+            height: 400px;
+            background-color: rgb(211, 76, 76);
+            /* float: left; */
+            /* 向右浮动 */
+        }
+        
+        .box3 {
+            width: 200px;
+            height: 300px;
+            background-color: rgb(77, 62, 62);
+            float: left;
+        }
+        
+        span {
+            float: left;
+            /* 使之具有行内块的性质,不需要再转换行内块 */
+            /* 块级元素也一样 */
+            width: 200px;
+            height: 300px;
+            background-color: pink;
+        }
+        
+        p {
+            float: left;
+            /* 添加浮动后宽度为内容数 */
+            height: 300px;
+            background-color: rgb(197, 35, 35);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">一</div>
+
+    <div class="box2">二</div>
+    <!-- 第二个盒子不浮动，会在第一个盒子下 -->
+    <div class="box3">三</div>
+    <span>四</span>
+    <p>五</p>
+</body>
+
+</html>

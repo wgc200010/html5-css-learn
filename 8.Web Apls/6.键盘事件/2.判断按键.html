@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    document.addEventListener('keyup', function(e) {
+        // console.log(e);
+        console.log('up' + e.keyCode); //输出对应的ascll码，keyup和keydown无法识别字母大小写
+    })
+    document.addEventListener('keypress', function(e) {
+        console.log('press' + e.keyCode); //可识别大小写
+    })
+</script>
+
+<body>
+
+</body>
+
+</html>

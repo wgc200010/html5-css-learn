@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 80px;
+            background-color: pink;
+            margin: 100px auto;
+            /* white-space: normal; */
+            /* 文字显示不完，自动换行 */
+            white-space: nowrap;
+            /* 1.不换行 */
+            overflow: hidden;
+            /* 2.溢出部分隐藏 */
+            text-overflow: ellipsis;
+            /* 3.溢出省略号 */
+        }
+        /* 单行溢出 */
+        
+        p {
+            margin: 500px auto;
+            width: 150px;
+            height: 65px;
+            background-color: pink;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            /* 定义弹性盒子 */
+            -webkit-line-clamp: 3;
+            /* 第三行超出时省略号 */
+            -webkit-box-orient: vertical;
+            /* 设置或检索伸缩盒子，对象的子元素的排列方式 */
+        }
+        /* 多行溢出，兼容性高，很多浏览器不支持 */
+    </style>
+</head>
+
+<body>
+    <div>打算大苏打大阿ghhdgdfg士大夫十分福</div>
+    <p>阿达啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶烦烦烦烦烦烦烦烦烦方法顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjjjjjjjjjjjjjjjjjjjj顶顶</p>
+</body>
+
+</html>

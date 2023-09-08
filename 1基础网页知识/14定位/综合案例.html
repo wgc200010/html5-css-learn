@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .tb-promo {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            background-color: #fff;
+            margin: 100px auto;
+        }
+        
+        .tb-promo img {
+            width: 520px;
+            height: 280px;
+        }
+        
+        .point {
+            position: absolute;
+            width: 20px;
+            height: 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            line-height: 30px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, .3);
+        }
+        
+        .pre {
+            left: 0;
+            top: 50%;
+            margin-top: -15px;
+            border-radius: 0 15px 15px 0;
+        }
+        
+        .next {
+            right: 0;
+            top: 50%;
+            margin-top: -15px;
+            border-radius: 15px 0 0 15px;
+        }
+        
+        .nav {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            margin-left: -35px;
+            width: 70px;
+            height: 13px;
+            background-color: rgb(255, 255, 255, .5);
+            border-radius: 7px;
+        }
+        
+        .nav li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: rgb(250, 248, 248);
+            margin: 3px;
+            border-radius: 50%;
+        }
+        
+        .nav li:hover {
+            background-color: rgb(221, 57, 57);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo">
+        <img src="../images/tb.jpg" alt="">
+        <a href="#" class="pre point">
+            &lt;</a>
+        <a href="#" class="next point">&gt;</a>
+        <ul class="nav">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

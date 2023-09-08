@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translateX(800px);
+            }
+            50% {
+                transform: translate(800px, 500px);
+            }
+            75% {
+                transform: translate(0, 500px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        /* 可以做很多段变化，百分比为整数 */
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(214, 52, 52);
+            animation-name: move;
+            animation-duration: 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

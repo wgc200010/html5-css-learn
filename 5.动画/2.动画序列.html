@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            from {
+                transform: translate(0);
+            }
+            to {
+                transform: translate(1000px, 500px);
+            }
+            /* from,to等价于0%，100% */
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(201, 49, 49);
+            animation-name: move;
+            animation-duration: 10s;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

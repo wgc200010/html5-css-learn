@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./image/clock.png">
+    <script src="./jquery-1.11.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css"> -->
+    <link rel="stylesheet" href="./node_modules/layui/dist/css/layui.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 表单 -->
+    <div id="box0">
+        <form action="">
+            <img src="./image/logo.png" alt="" style="width: 300px;height: 60xp;">
+            <div style="width:100%;height:25px;line-height:25px;font-size:20px;color:#1e1edc;margin-bottom: 20px;">一、健康状况监测指标：</div>
+            1. 您今天是否有发热症状?
+            <br>　<input type="radio" value="是" name="myvs_1">
+            <span style="color:rgb(0, 0, 0)">是</span>
+            <input type="radio" value="否" name="myvs_1" checked=""> <span style="color:rgb(232, 30, 114)">否</span>
+            <br> 2. 您今天是否有咳嗽症状?
+            <br>　<input type="radio" value="是" name="myvs_2"> <span style="color:rgb(0, 0, 0)">是</span>
+            <input type="radio" value="否" name="myvs_2" checked=""> <span style="color:rgb(232, 30, 114)">否</span>
+            <br> 3. 您今天是否有乏力或轻微乏力症状?<br>　<input type="radio" value="是" name="myvs_3"> <span style="color:rgb(0, 0, 0)">是</span>
+            <input type="radio" value="否" name="myvs_3" checked=""> <span style="color:rgb(232, 30, 114)">否</span>
+            <br> 4. 您今天是否有鼻塞、流涕、咽痛或腹泻等症状?<br>　<input type="radio" value="是" name="myvs_4"> <span style="color:rgb(0, 0, 0)">是</span>
+            <input type="radio" value="否" name="myvs_4" checked=""> <span style="color:rgb(232, 30, 114)">否</span>
+            <br> 5. 您今天是否被所在地医疗机构确定为确诊病例?<br>　<input type="radio" value="是" name="myvs_5"> <span style="color:rgb(0, 0, 0)">是</span>
+            <input type="radio" value="否" name="myvs_5" checked=""> <span style="color:rgb(232, 30, 114)">否</span>
+            <hr>
+            <div style="width:100%;height:25px;line-height:25px;font-size:20px;color:#1e1edc">
+                二、感染风险监测指标：
+            </div>
+            <div style="width:100%;min-height:126px;line-height:21px;color:#333">6. 您是否被所在地政府确定为密切接触者?<br>　<input type="radio" value="是" name="myvs_7"> <span style="color:rgb(0, 0, 0)">是</span>
+                <input type="radio" value="否" name="myvs_7" checked=""> <span style="color:rgb(232, 30, 114)">否</span>
+                <br> 7. 您是否被所在地政府确定为次密切?<br>　<input type="radio" value="是" name="myvs_8"> <span style="color:rgb(0, 0, 0)">是</span>
+                <input type="radio" value="否" name="myvs_8" checked=""> <span style="color:rgb(232, 30, 114)">否</span>
+                <br> 8. 您今天是否被所在地医疗机构进行院内隔离观察治疗?<br>　<input type="radio" value="是" name="myvs_11"> <span style="color:rgb(0, 0, 0)">是</span>
+                <input type="radio" value="否" name="myvs_11" checked=""> <span style="color:rgb(232, 30, 114)">否</span>
+                <br> 9. 您今天是否被要求在政府集中隔离点进行隔离观察?<br>　<input type="radio" value="是" name="myvs_12"> <span style="color:rgb(0, 0, 0)">是</span>
+                <input type="radio" value="否" name="myvs_12" checked=""> <span style="color:rgb(232, 30, 114)">否</span>
+                <br> 10. 您今日是否被所在地政府有关部门或医院要求居家隔离观察? <br>　<input type="radio" value="是" name="myvs_13"> <span style="color:rgb(0, 0, 0)">是</span>
+                <input type="radio" value="否" name="myvs_13" checked=""> <span style="color:rgb(232, 30, 114)">否</span>
+                <br> 11. 共同居住人是否有确诊病例? 　<input type="radio" value="是" name="myvs_15"> <span style="color:rgb(0, 0, 0)">是</span>
+                <input type="radio" value="否" name="myvs_15" checked=""> <span style="color:rgb(232, 30, 114)">否</span>
+                <hr>
+                <div style="width:100%;height:25px;line-height:25px;font-size:20px;color:#1e1edc" ;margin:10px>
+                    三、行踪监测指标：
+                </div>
+                <div style="width:100%;min-height:126px;line-height:21px;color:#333">12. 当前实际所在地（若出差填写出差地）：<br>省份：<select size="1" name="myvs_13a" id="myvs_13a" style="border:1px solid #777;color:#0000FF;font-size:14px;"><option value="11">北京市</option><option value="12">天津市</option><option value="13">河北省</option><option value="14">山西省</option><option value="15">内蒙古自治区</option><option value="21">辽宁省</option><option value="22">吉林省</option><option value="23">黑龙江省</option><option value="31">上海市</option><option value="32">江苏省</option><option value="33">浙江省</option><option value="34">安徽省</option><option value="35">福建省</option><option value="36">江西省</option><option value="37">山东省</option><option selected="" value="41">河南省</option><option value="42">湖北省</option><option value="43">湖南省</option><option value="44">广东省</option><option value="45">广西壮族自治区</option><option value="46">海南省</option><option value="50">重庆市</option><option value="51">四川省</option><option value="52">贵州省</option><option value="53">云南省</option><option value="54">西藏自治区</option><option value="61">陕西省</option><option value="62">甘肃省</option><option value="63">青海省</option><option value="64">宁夏回族自治区</option><option value="65">新疆维吾尔自治区</option><option value="66">新疆生产建设兵团</option><option value="71">台湾省</option><option value="81">香港特别行政区</option><option value="82">澳门特别行政区</option><option value="99">国外</option></select>
+                    <br>地市：<span id="zy_210s"><select size="1" name="myvs_13b" id="myvs_13b" style="border:1px solid #777;color:#0000FF;font-size:14px;"><option value="4100">河南省</option><option selected="" value="4101">郑州市</option><option value="4102">开封市</option><option value="4103">洛阳市</option><option value="4104">平顶山市</option><option value="4105">安阳市</option><option value="4106">鹤壁市</option><option value="4107">新乡市</option><option value="4108">焦作市</option><option value="4109">濮阳市</option><option value="4110">许昌市</option><option value="4111">漯河市</option><option value="4112">三门峡市</option><option value="4113">南阳市</option><option value="4114">商丘市</option><option value="4115">信阳市</option><option value="4116">周口市</option><option value="4117">驻马店市</option><option value="4118">济源市</option><option value="4127">河南省周口市川汇区</option><option value="4151">郑州大学主校区</option><option value="4152">郑州大学南校区</option><option value="4153">郑州大学北校区</option><option value="4154">郑州大学东校区</option><option value="4155">郑州大学洛阳校区</option><option value="4156">郑州大学护理校区</option><option value="4157">郑州大学农学院校区</option><option value="4190">河南省省直辖县级行政区划</option></select></span><br>
+                    <span style="margin-top: 5px;">具体地址:</span>
+                    <input type="text" name="dizhi" id="dizhi" style="margin-top: 5px;">
+                    <hr> 13. 您是否为当日返郑人员?　<input type="radio" value="是" name="myvs_24" style="margin-bottom: 10px;"> <span style="color:rgb(0, 0, 0)">是</span>
+                    <input type="radio" value="否" name="myvs_24" checked=""> <span style="color:rgb(232, 30, 114)">否</span>
+                    <br>
+                    <button class="layui-btn layui-btn-radius">提交</button>
+        </form>
+        <!-- 返回前一个页面链接按钮 -->
+        <div class="layui-btn layui-btn-sm layui-btn-radius layui-btn-danger" style="margin-top: -3px;margin-left: 20px;">
+            <a href="" style="color: #fff;">返回</a></div>
+        </div>
+        <!-- 右侧浮框 -->
+        <div class="banner-top-slide">
+            <div class="banner-bottom-top">
+                <h4>今日天气：
+                </h4>
+                <br><br>
+                <p>宜出行，宜户外运动，适宜衬衫，不宜洗车，不用带伞</p>
+            </div>
+            <div class="banner-bottom-bottom">
+                <div class="banner-top-slide-grids">
+                    <script src="./responsiveslides.min.js"></script>
+                    <script>
+                        $(function() {
+                            // Slideshow 4
+                            $("#slider3").responsiveSlides({
+                                auto: true,
+                                pager: true,
+                                nav: false,
+                                speed: 500,
+                                namespace: "callbacks",
+                                before: function() {
+                                    $('.events').append("<li>before event fired.</li>");
+                                },
+                                after: function() {
+                                    $('.events').append("<li>after event fired.</li>");
+                                }
+                            });
+
+                        });
+                    </script>
+                    <div id="top" class="callbacks_container">
+                        <ul class="rslides" id="slider3">
+                            <li>
+                                <div class="banner-slid">
+                                    <h3>同舟共济</h3>
+                                    <p>居家隔离，减少外出，就是最好的防护;</br>
+                                        听从号召尽量待在家中，不串门不聚会;</br>正确佩戴口罩，做好防护，养成良好卫生习惯。
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="banner-slid">
+                                    <h3>坚定信心</h3>
+                                    <p>科学宣传疫情防护知识，提高公众自我保护意识;</br>
+                                        加强防控，一起加油。众志成城，抗击疫情;</br>
+                                        疫情就是命令，防控就是责任。
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var sliderbar = document.querySelector('.banner-top-slide');
+            var banner = document.querySelector('.banner-top-slide');
+            var bannerTop = banner.offsetTop;
+            var sliderbarTop = sliderbar.offsetTop - bannerTop;
+            document.addEventListener('scroll', function() {
+                if (window.pageYOffset >= bannerTop) {
+                    banner.style.position = 'fixed';
+                    sliderbar.style.top = sliderbarTop + 'px';
+                } else {
+                    banner.style.position = 'absolute';
+                    sliderbar.style.top = 220 + 'px';
+                }
+            })
+        </script>
+        <!-- 退出登录，返回登陆页面 -->
+        <div class="box3">
+            <div class="front"><a href="">注销并返回登录</a></div>
+            <div class="back">退出 <i class="layui-icon layui-icon-logout"></i> </div>
+        </div>
+</body>
+
+</html>

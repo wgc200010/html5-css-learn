@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 立即执行函数不用调用，直接执行 -->
+    <script>
+        function fn() {
+            console.log('dfsf');
+        }
+        fn(); //老写法
+        //2.写法
+        // (function(){})()或(function(){}())
+
+        (function(a) {
+            console.log(a);
+        })(1.2); //最后面的（）相当于调用
+
+
+        (function(x, y) {
+            console.log(x + y);
+        }(1, 2)); //第二种方式，类似
+    </script>
+</body>
+
+</html>

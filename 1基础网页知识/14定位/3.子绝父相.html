@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 子盒子绝对定位，父元素相对定位 */
+        /* 因为绝对定位不占有位置 */
+        
+        li {
+            list-style: none;
+        }
+        
+        ul li {
+            position: relative;
+            /* 父盒子相对定位 */
+            margin-right: 15px;
+            float: left;
+            margin-bottom: 15px;
+            width: 228px;
+            height: 270px;
+            background-color: #ffffff;
+        }
+        
+        ul {
+            width: 1225px;
+        }
+        
+        li>img {
+            width: 100%;
+        }
+        
+        h4 {
+            margin: 20px 20px 20px 25px;
+            font-size: 14px;
+            color: #050505;
+            font-weight: 400;
+        }
+        
+        ul li .info {
+            margin: 0 20px 0 25px;
+            font-size: 12px;
+            color: #494949;
+        }
+        
+        ul li .info span {
+            color: #bcdd27;
+        }
+        
+        li em img {
+            position: absolute;
+            /* 子盒子绝对定位 */
+            right: 0;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="clearfix">
+
+        <li>
+            <em>
+             <img src="../13学成在线案例/NEW.png" alt="">
+            </em>
+            <img src="../13学成在线案例/pic.png" alt="">
+            <h4>Think PHP 5.0 博客系统实战项目演练 </h4>
+            <div class="info"><span> 高级 •</span> 1125人在学习</div>
+        </li>
+    </ul>
+
+</body>
+
+</html>

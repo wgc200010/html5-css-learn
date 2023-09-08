@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        window.onload = function() { //老方法：在最后执行，可将script放在任何位置，只能写一次
+            var btn = document.querySelector('button');
+            btn.addEventListener('click', function() {
+                alert('sdad');
+            });
+        }
+    </script> -->
+
+
+
+    <script>
+        window.addEventListener('load', function() {
+                var btn = document.querySelector('button');
+                btn.addEventListener('click', function() {
+                    alert('sdad');
+                }); //新方法：可以重复写
+            })
+            //同样可以放在任何位置
+        window.addEventListener('load', function() {
+            alert('132131');
+        })
+    </script>
+    <button>点击</button>
+
+</body>
+
+</html>

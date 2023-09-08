@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function countdown(time) {
+            var nowtime = +new Date();
+            var intime = +new Date(time); //返回输入时间毫秒数
+            var times = (intime - nowtime) / 1000; //times剩余秒数
+
+            var day = parseInt(times / 60 / 60 / 24); //得到天数
+            day = day < 10 ? '0' + day : day;
+            var hour = parseInt(times / 60 / 60 % 24); //小时
+            hour = hour < 10 ? '0' + hour : hour;
+            var mi = parseInt(times / 60 % 60); //分
+            mi = mi < 10 ? '0' + mi : mi;
+            var s = parseInt(times % 60); //秒
+            s = s < 10 ? '0' + s : s;
+            return day + '天' + hour + '时' + mi + '分' + s + '秒';
+        }
+        console.log(countdown('2022-2-25 0:0:0')); //输出相差时间
+        var date = new Date();
+        console.log(date); //输出当前时间
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

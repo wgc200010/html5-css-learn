@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* //很多浏览器不支持 */
+        
+        div {
+            display: flex;
+            flex-direction: row;
+            width: 600px;
+            height: 400px;
+            background-color: red;
+            flex-wrap: wrap;
+            /* 放不下会换行。默认是不换行，直接压缩 */
+        }
+        
+        div span {
+            width: 150px;
+            height: 100px;
+            background-color: pink;
+            color: blue;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <!-- 直接添加会让所有的盒子在一行显示，放不下缩小子元素 -->
+    </div>
+</body>
+
+</html>

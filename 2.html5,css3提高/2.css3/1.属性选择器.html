@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 权重均为10 */
+        
+        input[value] {
+            color: chartreuse;
+        }
+        /* 属性选择，选出含有[]属性的标签 */
+        
+        input[type="text"] {
+            color: cornflowerblue;
+        }
+        /* 选出含有[type=“”]元素的标签 */
+        
+        div[class^=icon] {
+            color: crimson;
+        }
+        /* 具有class属性，并以icon开头的元素 */
+        
+        section[class$=data] {
+            color: rgb(212, 184, 21);
+        }
+        /* 具有class属性，并以data结尾的元素 */
+    </style>
+</head>
+
+<body>
+    1.选出含有[]属性的标签:
+    <input type="text" value="大阿达">
+    <input type="text">
+    <br> 2.选出含有[type=“”]元素的标签:
+    <input type="text">
+    <input type="password">
+    <br> 3.具有class属性，并以icon开头的元素
+    <div class="icon1">小图标1</div>
+    <div class="icon2">小图标2</div>
+    <div class="icon3">小图标3</div>
+    <div class="icon4">小图标4</div>
+    <br>4.具有class属性，并以icon开头的元素
+    <section class="icon1-data">一号</section>
+    <section class="icon2-data">二号</section>
+    <section class="icon3-ico">三号</section>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* z-index数值越大，越靠上 */
+        
+        .box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+        
+        .xiongda {
+            z-index: 1;
+            background-color: rgb(240, 16, 16);
+        }
+        
+        .xionger {
+            background-color: green;
+            z-index: 2;
+            left: 50px;
+            top: 50px;
+        }
+        
+        .qiang {
+            z-index: 3;
+            left: 100px;
+            top: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="xiongda box">熊大</div>
+    <div class="xionger box">熊二</div>
+    <div class="qiang box">光头强</div>
+</body>
+
+</html>

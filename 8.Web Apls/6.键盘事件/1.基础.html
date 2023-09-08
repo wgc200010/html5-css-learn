@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // document.onkeyup = function() {
+        //     alert('dad'); //弹起时会触发
+        // }
+        document.addEventListener('keyup', function() {
+            alert('123'); //弹起时会触发
+        })
+        document.addEventListener('keypress', function() {
+            alert('press'); //按下时会触发
+        })
+        document.addEventListener('keydown', function() {
+            alert('press'); //按下时会触发
+        })
+    </script>
+</body>
+
+</html>

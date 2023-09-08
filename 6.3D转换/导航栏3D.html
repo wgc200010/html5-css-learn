@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        ul {
+            margin: 0 auto;
+        }
+        
+        li {
+            width: 120px;
+            height: 35px;
+            float: left;
+            margin-right: 20px;
+        }
+        
+        .box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            perspective: 500px;
+            transform-style: preserve-3d;
+            transition: all 1s;
+        }
+        
+        .box:hover {
+            transform: rotateX(90deg);
+        }
+        
+        .box .front,
+        .box .back {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            font-style: 30px;
+            line-height: 35px;
+            color: white;
+            text-align: center;
+        }
+        
+        .box .front {
+            background-color: rgb(59, 216, 45);
+            transform: translate3d(0, 17.5px, 0) rotateX(-90deg);
+            /* 移动必须在旋转前 */
+            /* 先旋转再移动，会按图片面朝方向移动 */
+        }
+        
+        .box .back {
+            background-color: rgb(75, 73, 206);
+            transform: translateZ(17.5px);
+            /* 向前移动，形成直角 */
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <div class="box">
+                <div class="front">111</div>
+                <div class="back">阿松大</div>
+            </div>
+
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">111</div>
+                <div class="back">阿松大</div>
+            </div>
+
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">111</div>
+                <div class="back">阿松大</div>
+            </div>
+
+        </li>
+    </ul>
+</body>
+
+</html>

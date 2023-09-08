@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="123">123</button>
+    <button id="asd">asd</button><br>
+    <img src="../../1基础网页知识/images/01.jpg" alt="">
+    <script>
+        var x = document.getElementById('123');
+        var as = document.getElementById('asd');
+        var img = document.querySelector('img');
+        as.onclick = function() {
+            img.src = '../../1基础网页知识/images/80622546690363.jpg';
+        }
+        x.onclick = function() {
+            img.src = '../../1基础网页知识/images/01.jpg';
+        }
+    </script>
+</body>
+
+</html>

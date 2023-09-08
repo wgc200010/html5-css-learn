@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function reverse(arr) {
+            if (arr instanceof Array) {
+                var newarr = [];
+                for (var i = arr.length - 1; i >= 0; i--) {
+                    newarr[newarr.length] = arr[i];
+                }
+                return newarr;
+            } else {
+                return '要求输入参数是数组';
+            }
+        }
+        console.log(reverse([1, 2, 3]));
+        console.log(reverse(1));
+        //检测是否为数组
+        var arr = [];
+        console.log(arr instanceof Array); //方法一判断书否为数组
+
+        console.log(Array.isArray(arr)); //方法二判断书否为数组
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

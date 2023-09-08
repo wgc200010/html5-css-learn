@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 0px;
+            height: 0px;
+            border: 100px solid green;
+            border-top: 50px solid rgb(255, 255, 255);
+            border-left: 0 solid rgb(255, 255, 255);
+            border-bottom: 0 solid #000;
+            /* 做出直角三角 */
+        }
+        
+        .pice {
+            width: 160px;
+            height: 24px;
+            border: 1px solid red;
+            margin: 100px auto;
+            text-align: center;
+        }
+        
+        .one {
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 24px;
+            background-color: rgb(255, 1, 1);
+            line-height: 24px;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+        }
+        
+        .one i {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-color: transparent rgb(255, 255, 255) transparent transparent;
+            border-style: solid;
+            border-width: 24px 10px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="pice">
+        <span class="one">
+            1650 <i></i></span>
+        <span>16502</span>
+    </div>
+</body>
+
+</html>

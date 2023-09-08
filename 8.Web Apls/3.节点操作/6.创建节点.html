@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>123</li>
+    </ul>
+    <script>
+        var li = document.createElement('li'); //创建新节点
+        var ul = document.querySelector('ul');
+        ul.appendChild(li); //添加到父元素,在原有的li之后
+        var li1 = document.createElement('li');
+        ul.insertBefore(li1, ul.children[0]); //指定插入位置
+    </script>
+</body>
+
+</html>

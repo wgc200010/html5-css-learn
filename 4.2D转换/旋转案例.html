@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            float: left;
+            width: 200px;
+            height: 200px;
+            border: 1px solid rgb(0, 238, 71);
+            margin: 20px;
+            overflow: hidden;
+        }
+        
+        div::before {
+            content: '阿萨';
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: rgb(185, 103, 103);
+            transform-origin: left bottom;
+            transform: rotate(180deg);
+            transition: all 0.5s;
+        }
+        
+        div:hover::before {
+            transform: rotate(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+</body>
+
+</html>

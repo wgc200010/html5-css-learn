@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Math.random()返回一个随机小数，0-1
+        console.log(Math.random());
+        // Math.floor(Math.random()*(max-min+1))+min;得到一定范围随机数
+        function getrandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        console.log(getrandom(1, 10)); //得到一个1-10的整数
+        var arr = ['地方', '大', 'dad'];
+        console.log(arr[getrandom(0, 2)]); //随机输出一个
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

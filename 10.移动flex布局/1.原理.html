@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* //很多浏览器不支持 */
+        
+        div {
+            display: flex;
+            /* 方便摆放子盒子 */
+            /* 1.任何元素都可以指定为flex */
+            /* 2.float,clear等将失效 */
+            /* 3.称为flex容器 */
+            width: 80%;
+            height: 300px;
+            background-color: red;
+        }
+        
+        div span {
+            width: 150px;
+            height: 100px;
+            background-color: pink;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+
+</html>

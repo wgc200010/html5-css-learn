@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            /* 若没width，则为一行 */
+            height: 200px;
+            background: forestgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>独占一行</div>
+    <p>
+        <div>123</div>
+    </p>
+    <!-- 错误，文字类标签内不能放块元素，如<p></p>，<h1></h1> -->
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+    <ol></ol>
+    <ul></ul>
+    <!-- 均为块元素 -->
+
+</body>
+
+</html>

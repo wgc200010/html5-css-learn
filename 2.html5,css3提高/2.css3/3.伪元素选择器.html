@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?p4ssmb');
+            src: url('fonts/icomoon.eot?p4ssmb#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?p4ssmb') format('truetype'), url('fonts/icomoon.woff?p4ssmb') format('woff'), url('fonts/icomoon.svg?p4ssmb#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        /* 伪元素权重1 */
+        /* ::前无空格 */
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(224, 149, 149);
+        }
+        
+        div::before {
+            content: 'wo';
+            /* content必须有 */
+            display: inline-block;
+            width: 30px;
+            height: 40px;
+            /* 行内元素 */
+        }
+        /* befor在盒子里的前面 */
+        
+        div::after {
+            content: 'sd';
+        }
+        /* after放在盒子里的后面 */
+        
+        .box {
+            position: relative;
+            width: 200px;
+            height: 36px;
+            border: 1px solid red;
+            background-color: transparent;
+        }
+        
+        .box::after {
+            font-family: 'icomoon';
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 5px;
+            font-size: 18px;
+            color: red;
+        }
+        /* 字体案例 */
+    </style>
+</head>
+
+<body>
+    <div>阿萨</div>
+    <div class="box"></div>
+</body>
+
+</html>

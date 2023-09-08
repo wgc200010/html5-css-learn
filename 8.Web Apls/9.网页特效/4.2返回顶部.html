@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .slider-bar {
+            position: absolute;
+            left: 50%;
+            top: 300px;
+            margin-left: 600px;
+            width: 45px;
+            height: 130px;
+            background-color: pink;
+        }
+        
+        .w {
+            width: 1200px;
+            margin: 10px auto;
+        }
+        
+        .header {
+            height: 150px;
+            background-color: purple;
+        }
+        
+        .banner {
+            height: 250px;
+            background-color: skyblue;
+        }
+        
+        .main {
+            height: 1000px;
+            background-color: yellowgreen;
+        }
+        
+        span {
+            display: none;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider-bar">
+        <span class="goBack">返回顶部</span>
+    </div>
+    <div class="header w">头部区域</div>
+    <div class="banner w">banner区域</div>
+    <div class="main w">主体部分</div>
+    <script>
+        var sl_br = document.querySelector('.slider-bar');
+        var ban = document.querySelector('.banner');
+        var ban_top = ban.offsetTop;
+        var sl_top = sl_br.offsetTop - ban_top;
+        var main = document.querySelector('.main');
+        var back = document.querySelector('.goBack');
+        var maintop = main.offsetTop;
+        document.addEventListener('scroll', function() {
+            // console.log(window.pageYOffset); //页面被卷去的头部
+            if (window.pageYOffset >= ban_top) {
+                sl_br.style.position = 'fixed';
+                sl_br.style.top = sl_top + 'px';
+            } else {
+                sl_br.style.position = 'absolute';
+                sl_br.style.top = 300 + 'px';
+            }
+            if (window.pageYOffset >= maintop) {
+                back.style.display = 'block';
+            } else {
+                back.style.display = 'none';
+            }
+        })
+        back.addEventListener('click', function() {
+            window.scroll(0, 0);
+        })
+    </script>
+</body>
+
+</html>

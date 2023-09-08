@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 页面一打开，就从左走到右 */
+        
+        @keyframes move {
+            0% {
+                transform: translateX(0px);
+            }
+            /* 初始位置 */
+            100% {
+                transform: translate(1000px, 100px);
+            }
+            /* 末位置 */
+        }
+        /* 定义动画 */
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(194, 8, 8);
+            animation-name: move;
+            /* move动画名称 */
+            animation-duration: 10s;
+            /* 动画花费时间 */
+        }
+        /* 调用动画 */
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

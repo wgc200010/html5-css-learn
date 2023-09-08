@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+
+<body>
+
+    <h1>表单</h1>
+
+    <form action="123.php" method="get" name="1">
+        <label for="文本"> 文本:</label><input type="text" id="文本" name="文本" maxlength="6" id="1" value="请输入">
+        <br> 密码: <input type="password" name="密码">
+        <!-- 密码 -->
+        <br>单选: 男<input type="radio" name="sex" checked="checked" value="男">女<input type="radio" value="女" name="sex">
+        <!-- 必须取相同的名字，才能实现多选一 -->
+        <br>多选：A <input type="checkbox" checked="checked"> B <input type="checkbox">
+        <!-- checked="checked"打开后默认选中 -->
+        <br>重置; <input type="reset" value="表单重置">
+        <br>提交: <input type="submit" value="注册">
+        <br>目前无用按钮：<input type="button" value="发送短信">
+        <!-- button需要后期配合js -->
+        <br> 上传头像：<input type="file" value="上传">
+
+        <br> 单选:<label for="sex"> 男 </label><input type="radio" id="sex" name="sex" checked="checked" value="男"><label for="sex0">女</label> <input type="radio" id="sex0" value="女" name="sex">
+        <!-- 使鼠标放在文字上时，可以选择，for等于id -->
+
+    </form>
+    <h1>下拉表单</h1>
+    <form action="123.png" method="get" name="123">
+        籍贯：<select name="籍贯" id="籍贯">
+           <option value=""> 山东</option>
+           <option value="" >河南</option>
+           <option value="">还能</option>
+           <option value="">背景</option>
+           <option value="">天津</option>
+           <!-- selected="selected"打开默认 -->
+       </select>
+    </form>
+    <h1>大文本框</h1>
+    <form action="123.png" name="1233" method="get">
+        <textarea name="大文本" id="大文本" cols="30" rows="20"><h1>默认文字</h1></textarea>
+    </form>
+</body>
+
+</html>

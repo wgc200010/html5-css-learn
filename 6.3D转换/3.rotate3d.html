@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 500px;
+        }
+        /* 给父级添加透视 */
+        
+        img {
+            display: block;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+        
+        img:hover {
+            /* transform: rotateX(180deg); */
+            /* 左手定则,xyz相同 */
+            transform: rotate3d(1, 0, 0, 45deg);
+            /* 旋转的为1，其余为0，最后角度 */
+            /* 可以沿着斜轴 */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="pig.jpg" alt="">
+</body>
+
+</html>

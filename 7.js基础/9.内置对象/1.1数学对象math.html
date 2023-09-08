@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //math对象不是构造函数，不需要new调用，可直接使用
+        console.log(Math.PI); //圆周率
+        console.log(Math.LN2); //对数
+        console.log(Math.max(1, 20, -2)); //求最大值
+        console.log(Math.abs(-2.2)); //绝对值
+        console.log(Math.abs('1')); //转化为数字
+        console.log('向下取整' + Math.floor(1.5)); //向下取整
+        console.log('向上取整' + Math.ceil(1.5)); //向上取整、
+        console.log(Math.round(1.4)); //四舍五入
+        console.log(Math.max()); //没参数返回-Infinity
+        var mymath = {
+            PI: 3.1415,
+            max: function() {
+                var max = arguments[0];
+                for (var i = 1; i < arguments.length; i++) {
+                    if (arguments[i] > max)
+                        max = arguments[i];
+                }
+                return max;
+            }
+        }
+        console.log(mymath.PI);
+        console.log(mymath.max(1, 2, 3, -10));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :nth-child()规则： */
+        /* 执行时首先看nth-child(2)，之后看前面的li, ul包含不同标签时可能会无法选中，所以需要nth-of-type()*/
+        
+        ul li:first-child {
+            background-color: pink;
+        }
+        /* 1.选择ul中的第一个孩子(ul空格不能少) */
+        /* 加上li更精确 */
+        
+        ul li:last-child {
+            background-color: pink;
+        }
+        /* 2.选择ul中的最后孩子(ul空格不能少) */
+        /* 不能用上述方法选取中间孩子 */
+        
+        ul li:nth-child(2) {
+            background-color: blue;
+        }
+        /* 3.选取第二个孩子,()为第几个孩子 */
+        
+        ul li:nth-child(even) {
+            background-color: rgb(0, 255, 98);
+        }
+        /* 4.选取所有偶数孩子，odd为奇数 */
+        
+        ol li:nth-child(n) {
+            background-color: rgb(226, 92, 92);
+        }
+        /* 5.里面字母必须是n，从零开始往后计算,会全部选中 */
+        
+        ol li:nth-child(2n) {
+            background-color: rgb(75, 77, 219);
+        }
+        /* 6.选中偶数孩子，2n+1则为奇数，也可5n或5+n */
+        /* 也可-n+5，从第五个往前数 */
+        /* 执行时会全部排序，首先看nth-child(2)，之后看前面的li, ul包含不同标签时可能会无法选中；所以需要nth-of-type()，会先看li进行判定*/
+        
+        section div:nth-of-type(1) {
+            background-color: rgb(185, 26, 26);
+        }
+        /* 7.会将section中的指定div标签排序， */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+    <ol>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ol>
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+</body>
+
+</html>
